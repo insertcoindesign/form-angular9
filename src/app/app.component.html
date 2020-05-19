@@ -1,0 +1,4 @@
+<app-home (featureSelected)="onNavigate($event)"></app-home>
+
+  <app-call *ngIf="loadedFeature ==='call'"></app-call>
+<app-mesage *ngIf="loadedFeature !=='call'"></app-mesage>
